@@ -60,7 +60,7 @@ h3{
     background-color: rgb(69, 88, 196);
     color: #f1f9f9;
     text-align: center;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
 }
 
 .news{
@@ -69,4 +69,13 @@ h3{
     margin-top: 25px;
     text-decoration: none;
     font-size: 24px; 
+}
+
+
+.jumbotron{
+    text-align: center;
+}
+
+.btn{
+    background-color: rgb(69, 88, 196);
 }
