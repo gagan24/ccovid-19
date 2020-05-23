@@ -61,7 +61,7 @@ app.get("/news", function(req, res){
     //         res.send(news.articles[0].title)
     //     })
     // })
-    const newsapi = new NewsAPI(process.env.API_KEY);
+    const newsapi = new NewsAPI("7f2b060629b4473d96fd4d6ee7d88144");
     newsapi.v2.topHeadlines({
         q: 'covid-19',
         category: 'health',
