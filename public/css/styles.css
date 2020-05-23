@@ -1,0 +1,68 @@
+body{
+    background-color: #f1f9f9;
+    font-family: 'Montserrat', sans-serif;}
+
+.heading{
+    margin-top: 50px;
+}
+
+h1{
+    display: inline-block;
+    font-size: 56px;
+    color: rgb(69, 88, 196);
+    font-weight: bold;
+}
+
+.options a{
+    float: right;
+    text-decoration: none;
+}
+
+.info{
+    margin-top: 2rem;
+}
+
+.aboutCovid{
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: justify;
+}
+
+.timeStamp{
+    margin: 4rem auto 1rem;
+}
+
+.timeStampInfo{
+    margin-bottom: 4rem;
+}
+
+.card{
+    text-align: center;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    box-shadow: 3px 3px 10px grey;
+}
+
+.doctorImage{
+    float: right;
+}
+
+h2{
+    text-align: center;
+}
+
+.footer{
+    height: 5rem;
+    background-color: rgb(69, 88, 196);
+    color: #f1f9f9;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.news{
+    color: rgb(69, 88, 196);
+    float: right;
+    margin-top: 25px;
+    text-decoration: none;
+    font-size: 24px; 
+}
