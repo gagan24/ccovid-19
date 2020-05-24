@@ -77,7 +77,7 @@ app.get("/news", function(req, res){
         var title = [];
         var description = [];
         var detailsLink = [];
-        for(i = 0; i < 5; i++){
+        for(i = 0; i < 10; i++){
             title.push(response.articles[i].title);
             description.push(response.articles[i].description)
             detailsLink.push(response.articles[i].url);
