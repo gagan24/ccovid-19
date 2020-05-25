@@ -81,3 +81,23 @@ h3{
 .btn{
     background-color: rgb(69, 88, 196);
 }
+
+.active{
+    color: rgb(69, 88, 196);
+}
+
+.recovered{
+    color: green;
+}
+
+.death{
+    color: red;
+}
+
+.confirmed{
+    color: rgb(212, 139, 3);
+}
+
+.screening{
+    color: purple;
+}
