@@ -10,7 +10,7 @@
   <div class="info">
     <div class="row">
       <div class="col-md-6 aboutCovid">
-        <h3>What is Covid-19?</h3>
+        <h3>What is Covid-19 ?</h3>
         <p>COVID-19 is the infectious disease caused by the most recently discovered coronavirus. This new virus and disease were unknown before the outbreak began in Wuhan, China, in December 2019. COVID-19 is now a pandemic affecting many countries globally.</p>
       </div>
       <div class="col-md-6">
@@ -19,11 +19,13 @@
     </div>
   </div>
 
+
   <!-- <p class="text-center timeStamp"></p>
   <p class="text-center text-muted timeStampInfo"> Data updates at 8:00AM daily </p> -->
     <div class="numbers">
+    <img class="flagImg" src=<%= flag %>  alt="">
     <div class="row">
-      <div class="col">
+      <div class="col-12 col-sm-4">
       <div class="card">
           <div class="card-body confirmed">
             <h5>Confirmed Cases</h5>
@@ -33,7 +35,7 @@
         </div>
       </div>  
 
-      <div class="col">
+      <div class="col-12 col-sm-4">
         <div class="card">
           <div class="card-body active">
             <h5> Active Cases </h5>
@@ -41,21 +43,23 @@
           </div>
         </div>
       </div> 
-
-      <div class="col">
+      
+      
+      <div class="col-12 col-sm-4">
         <div class="card">
-          <div class="card-body death">
-            <h5>Total Deaths</h5>
-          
-            <p ><%= totalDeaths  %></p>
+          <div class="card-body critical">
+            <h5>Critical Cases</h5>
+            <p><%= critical %></p>
           </div>
         </div>
       </div>
 
-    </div>
+     </div>
+
 
       <div class="row">
-        <div class="col">
+
+        <div class="col-12 col-sm-4">
           <div class="card">
             <div class="card-body recovered">
               <h5>Recovered</h5>
@@ -65,14 +69,25 @@
         </div>
       </div>
 
-      <div class="col">
+      <div class="col-12 col-sm-4">
         <div class="card">
-          <div class="card-body screening">
+          <div class="card-body death">
+            <h5>Total Deaths</h5>
+          
+            <p ><%= totalDeaths  %></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-4">
+        <div class="card">
+          <div class="card-body tests">
             <h5>Total Tests</h5>
             <p><%= tests %></p>
           </div>
         </div>
       </div>
+
 
     </div>
   </div>

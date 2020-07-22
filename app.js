@@ -29,6 +29,8 @@ app.get("/", function(req, res){
             const todayConfirmed = result.todayCases;
             const todayDeaths = result.todayDeaths;
             const todayRecovered = result.todayRecovered;
+            const flag = result.countryInfo.flag;
+            const critical = result.critical;
             // const recoveryRate = details.recovered_rate;
             // const timeStamp = details.last_updated;
             // const passengerScreened = details.passengers_screened;
@@ -50,7 +52,9 @@ app.get("/", function(req, res){
                 tests: tests,
                 todayConfirmed: todayConfirmed,
                 todayDeaths: todayDeaths,
-                todayRecovered: todayRecovered
+                todayRecovered: todayRecovered,
+                critical: critical,
+                flag: flag
                 // recoveryRate: recoveryRate,
                 // timeStamp: timeStamp,
                 // passengerScreened: passengerScreened

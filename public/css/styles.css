@@ -100,10 +100,21 @@ h3{
     color: brown;
 }
 
-.screening{
+.tests{
     color: purple;
+}
+
+.critical{
+    color: palevioletred;
 }
 
 .news-area{
     margin: 2rem auto 4rem;
+}
+
+.flagImg{
+    display: block;
+    margin: auto auto 3rem;
+    width: 3rem;
+    height: 2rem;
 }
