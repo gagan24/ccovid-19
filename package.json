@@ -19,6 +19,7 @@
     "express": "^4.17.1",
     "https": "^1.0.0",
     "newsapi": "^2.4.0",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "novelcovid": "^3.0.0"
   }
 }

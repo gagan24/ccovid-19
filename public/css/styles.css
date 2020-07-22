@@ -28,8 +28,8 @@ h1{
     text-align: justify;
 }
 
-.timeStamp{
-    margin: 4rem auto 1rem;
+.numbers{
+    margin: 10rem auto 8rem;
 }
 
 .timeStampInfo{
@@ -41,7 +41,7 @@ h1{
     text-align: center;
     margin-bottom: 2rem;
     border-radius: 1rem;
-    box-shadow: 3px 3px 10px grey;
+    box-shadow: 8px 8px 12px grey;
 }
 
 .doctorImage{
@@ -76,6 +76,7 @@ h3{
 
 
 .jumbotron{
+    margin-top: 8rem;
     text-align: center;
 }
 
@@ -96,9 +97,13 @@ h3{
 }
 
 .confirmed{
-    color: rgb(212, 139, 3);
+    color: brown;
 }
 
 .screening{
     color: purple;
+}
+
+.news-area{
+    margin: 2rem auto 4rem;
 }

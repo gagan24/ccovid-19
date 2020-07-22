@@ -14,20 +14,25 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static('public'))
 
 app.get("/", function(req, res){
-    https.get("https://covid-19india-api.herokuapp.com/v2.0/country_data", function(response){
+    https.get("https://corona.lmao.ninja/v2/countries/India", function(response){
         console.log(response.statusCode)
-
+        if (response.statusCode == 200){
         response.on("data", (data) => {
             const result = JSON.parse(data);
-            const details = result[1];
-            const confirmedCases = details.confirmed_cases;
-            const activeCases = details.active_cases;
-            const totalDeaths = details.death_cases;
-            const deathRate = details.death_rate;
-            const recovered = details.recovered_cases;
-            const recoveryRate = details.recovered_rate;
-            const timeStamp = details.last_updated;
-            const passengerScreened = details.passengers_screened;
+            // const details = result[1];
+            const confirmedCases = result.cases;
+            const activeCases = result.active;
+            const totalDeaths = result.deaths;
+            // const deathRate = details.death_rate;
+            const recovered = result.recovered;
+            const tests = result.tests;
+            const todayConfirmed = result.todayCases;
+            const todayDeaths = result.todayDeaths;
+            const todayRecovered = result.todayRecovered;
+            // const recoveryRate = details.recovered_rate;
+            // const timeStamp = details.last_updated;
+            // const passengerScreened = details.passengers_screened;
+            
             // res.write("<p>" + timeStamp + "</p>");
             // res.write("<h1> Confirmed Cases " + confirmedCases + "</h1>");
             // res.write("<h1> Active cases " + activeCases + "</h1>");
@@ -40,13 +45,22 @@ app.get("/", function(req, res){
             res.render("index", {confirmedCases: confirmedCases,
                 activeCases: activeCases,
                 totalDeaths: totalDeaths,
-                deathRate: deathRate,
+                // deathRate: deathRate,
                 recovered: recovered,
-                recoveryRate: recoveryRate,
-                timeStamp: timeStamp,
-                passengerScreened: passengerScreened
+                tests: tests,
+                todayConfirmed: todayConfirmed,
+                todayDeaths: todayDeaths,
+                todayRecovered: todayRecovered
+                // recoveryRate: recoveryRate,
+                // timeStamp: timeStamp,
+                // passengerScreened: passengerScreened
             });
+            
         })
+    }
+    else{
+        res.send("Eroor")
+    }
     })
 })
 

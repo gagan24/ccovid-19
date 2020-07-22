@@ -1,14 +1,16 @@
 <%- include("partials/header"); -%> 
 
 <div class="container">
-<div class="heading">
-    <h1> Headlines </h1>
-    <a href="/" class="news">Home</a>
-</div>
-<% for(i=0; i < 10; i++){ %> 
-    <h3> <%= title[i] %></h3>
-    <p> <%= description[i] %> <a href=<%= detailsLink[i] %></a>For more</a></p>
-<% } %> 
+    <div class="heading">
+        <h1> Headlines </h1>
+        <a href="/" class="news">Home</a>
+    </div>
+    <div class="news-area">
+        <% for(i=0; i < 10; i++){ %> 
+            <h3> <%= title[i] %></h3>
+            <p> <%= description[i] %> <a href=<%= detailsLink[i] %></a>For more</a></p>
+        <% } %>
+    </div> 
 </div>
 
 <%- include("partials/footer") %> 

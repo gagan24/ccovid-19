@@ -19,58 +19,62 @@
     </div>
   </div>
 
-  <p class="text-center timeStamp"><%= timeStamp %></p>
-  <p class="text-center text-muted timeStampInfo"> Data updates at 8:00AM daily </p>
-
-  <div class="row">
-    <div class="col">
-     <div class="card">
-        <div class="card-body confirmed">
-          <h5>Confirmed Cases</h5>
-          <p ><%= confirmedCases %></p>
-        </div>
-      </div>
-    </div>  
-
-    <div class="col">
-      <div class="card">
-        <div class="card-body active">
-          <h5> Active Cases </h5>
-          <p ><%= activeCases %></p>
-        </div>
-      </div>
-    </div> 
-
-    <div class="col">
-      <div class="card">
-        <div class="card-body death">
-          <h5>Total Deaths</h5>
-          <p ><%= totalDeaths  %></p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
+  <!-- <p class="text-center timeStamp"></p>
+  <p class="text-center text-muted timeStampInfo"> Data updates at 8:00AM daily </p> -->
+    <div class="numbers">
     <div class="row">
       <div class="col">
-        <div class="card">
-          <div class="card-body recovered">
-            <h5>Recovered</h5>
-            <p ><%= recovered  %></p>
-          </div>
-      </div>
-    </div>
-
-    <div class="col">
       <div class="card">
-        <div class="card-body screening">
-          <h5>Total Screenings</h5>
-          <p><%= passengerScreened  %></p>
+          <div class="card-body confirmed">
+            <h5>Confirmed Cases</h5>
+        
+            <p ><%= confirmedCases %></p>
+          </div>
+        </div>
+      </div>  
+
+      <div class="col">
+        <div class="card">
+          <div class="card-body active">
+            <h5> Active Cases </h5>
+            <p ><%= activeCases %></p>
+          </div>
+        </div>
+      </div> 
+
+      <div class="col">
+        <div class="card">
+          <div class="card-body death">
+            <h5>Total Deaths</h5>
+          
+            <p ><%= totalDeaths  %></p>
+          </div>
         </div>
       </div>
+
     </div>
 
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-body recovered">
+              <h5>Recovered</h5>
+            
+              <p ><%= recovered  %></p>
+            </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <div class="card-body screening">
+            <h5>Total Tests</h5>
+            <p><%= tests %></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div>
 
   <hr>
