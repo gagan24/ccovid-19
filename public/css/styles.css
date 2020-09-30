@@ -29,15 +29,17 @@ h1{
 }
 
 .numbers{
-    margin: 10rem auto 8rem;
+    margin: 5rem auto 8rem;
 }
 
-.timeStampInfo{
+.worldwide{
     margin-bottom: 4rem;
+    margin-top: 6rem;
+    font-size: 1.3rem;
 }
 
 .card{
-    background-color: white;
+    background-color:  #fffefe;
     text-align: center;
     margin-bottom: 2rem;
     border-radius: 1rem;

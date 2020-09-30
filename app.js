@@ -14,10 +14,11 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static('public'))
 
 app.get("/", function(req, res){
-    https.get("https://corona.lmao.ninja/v2/countries/India", function(response){
+    https.get("https://corona.lmao.ninja/v2/all", function(response){
         console.log(response.statusCode)
         if (response.statusCode == 200){
         response.on("data", (data) => {
+            console.log(JSON.parse(data))
             const result = JSON.parse(data);
             // const details = result[1];
             const confirmedCases = result.cases;
@@ -29,7 +30,7 @@ app.get("/", function(req, res){
             const todayConfirmed = result.todayCases;
             const todayDeaths = result.todayDeaths;
             const todayRecovered = result.todayRecovered;
-            const flag = result.countryInfo.flag;
+            // const flag = result.countryInfo.flag;
             const critical = result.critical;
             // const recoveryRate = details.recovered_rate;
             // const timeStamp = details.last_updated;
@@ -54,7 +55,7 @@ app.get("/", function(req, res){
                 todayDeaths: todayDeaths,
                 todayRecovered: todayRecovered,
                 critical: critical,
-                flag: flag
+                // flag: flag
                 // recoveryRate: recoveryRate,
                 // timeStamp: timeStamp,
                 // passengerScreened: passengerScreened
@@ -63,7 +64,7 @@ app.get("/", function(req, res){
         })
     }
     else{
-        res.send("Eroor")
+        res.send("Error")
     }
     })
 })
