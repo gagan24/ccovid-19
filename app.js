@@ -14,24 +14,24 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static('public'))
 
 app.get("/", function(req, res){
-    https.get("https://corona.lmao.ninja/v2/all", function(response){
+    https.get("https://api.covid19api.com/world/total", function(response){
         console.log(response.statusCode)
         if (response.statusCode == 200){
         response.on("data", (data) => {
             console.log(JSON.parse(data))
             const result = JSON.parse(data);
             // const details = result[1];
-            const confirmedCases = result.cases;
-            const activeCases = result.active;
-            const totalDeaths = result.deaths;
+            const confirmedCases = result.TotalConfirmed;
+            // const activeCases = result.active;
+            const totalDeaths = result.TotalDeaths;
             // const deathRate = details.death_rate;
-            const recovered = result.recovered;
-            const tests = result.tests;
-            const todayConfirmed = result.todayCases;
-            const todayDeaths = result.todayDeaths;
-            const todayRecovered = result.todayRecovered;
+            const recovered = result.TotalRecovered;
+                // const tests = result.tests;
+                // const todayConfirmed = result.todayCases;
+                // const todayDeaths = result.todayDeaths;
+                // const todayRecovered = result.todayRecovered;
             // const flag = result.countryInfo.flag;
-            const critical = result.critical;
+                // const critical = result.critical;
             // const recoveryRate = details.recovered_rate;
             // const timeStamp = details.last_updated;
             // const passengerScreened = details.passengers_screened;
@@ -46,15 +46,15 @@ app.get("/", function(req, res){
             // res.write("<h1> Total Passenger Screened " + passengerScreened + "</h1>")
             // res.send();
             res.render("index", {confirmedCases: confirmedCases,
-                activeCases: activeCases,
+                activeCases: confirmedCases,
                 totalDeaths: totalDeaths,
                 // deathRate: deathRate,
                 recovered: recovered,
-                tests: tests,
-                todayConfirmed: todayConfirmed,
-                todayDeaths: todayDeaths,
-                todayRecovered: todayRecovered,
-                critical: critical,
+                    // tests: tests,
+                    // todayConfirmed: todayConfirmed,
+                    // todayDeaths: todayDeaths,
+                // todayRecovered: todayRecovered,
+                    // critical: critical,
                 // flag: flag
                 // recoveryRate: recoveryRate,
                 // timeStamp: timeStamp,
@@ -113,3 +113,4 @@ app.listen(process.env.PORT ||3000, () => {
     console.log("runing on port 3000")
 })
 
+// https://corona.lmao.ninja/v2/all
