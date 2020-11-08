@@ -7,37 +7,28 @@
   </div>
   </nav>
   <hr>
-  <div class="info">
-    <div class="row">
-      <div class="col-md-6 aboutCovid">
-        <h3>What is Covid-19 ?</h3>
-        <p>COVID-19 is the infectious disease caused by the most recently discovered coronavirus. This new virus and disease were unknown before the outbreak began in Wuhan, China, in December 2019. COVID-19 is now a pandemic affecting many countries globally.</p>
-      </div>
-      <div class="col-md-6">
-        <img class="doctorImage img-fluid" src="/images/doc.svg" alt="doctor"">
-      </div>
-    </div>
-  </div>
-
-
-  <h3 class="worldwide text-center text-muted">Worldwide</h3>
-  <!-- <p class="text-center text-muted timeStampInfo"> Data updates at 8:00AM daily </p> -->
-    <div class="numbers">
-    <div class="row">
-      <!-- <div class="col-12 col-sm-4">
-      <div class="card">
-          <div class="card-body confirmed">
-            <h5>Confirmed Cases</h5>
-        
+   
+      <div class="info">
+        <div class="row">
+          <div class="col-md-6 aboutCovid">
+            <img class="doctorImage img-fluid " src="/images/doc.svg" alt="doctor"">
+           
+          </div>
+          <div class="col-md-6 order-sm-first aboutCovid">
+            <h3>What is Covid-19 ?</h3>
+            <p class="text-muted">COVID-19 is the infectious disease caused by the most recently discovered coronavirus. This new virus and disease were unknown before the outbreak began in Wuhan, China, in December 2019. COVID-19 is now a pandemic affecting many countries globally.</p>
           </div>
         </div>
-      </div>   -->
+    
+  <h3 class="worldwide text-center text-muted">Worldwide</h3>
+    <div class="numbers">
+    <div class="row">
 
       <div class="col-12 col-sm-4">
         <div class="card">
           <div class="card-body active">
-            <h5> Total Confirmed </h5>
-            <p ><%= activeCases %></p>
+            <p> Total Confirmed </p>
+            <h5><%= activeCases %></h5>
           </div>
         </div>
       </div> 
@@ -45,97 +36,88 @@
       <div class="col-12 col-sm-4">
         <div class="card">
           <div class="card-body recovered">
-            <h5>Recovered</h5>
-          
-            <p ><%= recovered  %></p>
+            <p>Recovered</p>
+            <h5><%= recovered  %></h5>
           </div>
       </div>
-    </div>
-      
-      
-      <!-- <div class="col-12 col-sm-4">
-        <div class="card">
-          <div class="card-body critical">
-            <h5>Critical Cases</h5>
-          </div>
-        </div>
-      </div> -->
+    </div>    
 
       <div class="col-12 col-sm-4">
         <div class="card">
           <div class="card-body death">
-            <h5>Total Deaths</h5>
-          
-            <p ><%= totalDeaths  %></p>
+            <p>Total Deaths</p>
+            <h5><%= totalDeaths  %></h5>
           </div>
         </div>
       </div>
-
      </div>
+  </div>
+</div>
+</div>
 
-
-      <div class="row">
-
-        <!-- <div class="col-12 col-sm-4">
-          <div class="card">
-            <div class="card-body recovered">
-              <h5>Recovered</h5>
-            
-            </div>
-        </div>
-      </div> -->
-
-      <!-- <div class="col-12 col-sm-4">
-        <div class="card">
-          <div class="card-body death">
-            <h5>Total Deaths</h5>
-          
-          </div>
-        </div>
-      </div> -->
-
-      <!-- <div class="col-12 col-sm-4">
-        <div class="card">
-          <div class="card-body tests">
-            <h5>Total Tests</h5>
-          </div>
-        </div>
-      </div> -->
-
-
-    </div>
+</section>
+  <div class="container-fluid flourish-embed flourish-map" data-src="story/225979">
+    <script src="https://public.flourish.studio/resources/embed.js"></script>
   </div>
 
   <hr>
-  <div class="info">
+
+  <div class="container">
+    <div class="precautions">
+  <div class="info `">
     <h2>Precautions</h2>
-    <div class="row">
-      <div class="col-md-6 aboutCovid ">
-        <h3>Social Distancing</h3>
-        <p>Social distancing is a non-pharmaceutical infection prevention and control intervention implemented to avoid/decrease contact between those who are infected with a disease causing pathogen and those who are not, so as to stop or slow down the rate and extent of disease transmission in a community. This eventually leads to decrease in spread, morbidity and mortality due to the disease.</p>
-      </div>
-      <div class="col-md-6">
-        <img class="doctorImage img-fluid" src="/images/social.svg" alt="social distancing"  >
+      <div class="media row">
+        <div class="col-12 col-sm-4">
+         <img src="/images/mask.svg" class=" image-fluid">
+        </div>
+      <div class="col-12 col-sm-8">
+        <div class="media-body">
+          <h5 class="mt-0 align-self-center">Wear Mask</h5>
+          <p class="text-muted text-justify d-md-block d-none"> A medical mask is one of the prevention measures to limit spread of certain respiratory diseases, including 2019- nCoV, in affected areas. However, the use of a mask alone is insufficient to provide the adequate level of protection and other equally relevant measures should be adopted</p>         </div>
+        </div>
+      </div>  
+  
+        <div class="media row">
+          <div class="col-12 col-sm-4">
+            <img src="/images/hand-wash.svg" class="image-fluid" alt="..." >
+          </div>
+          <div class="col-12 col-sm-8 order-sm-first">
+          <div class="media-body">
+            <h5 class="mt-0 mb-1 order-sm-first">Wash Your Hands</h5>
+            <p class="text-muted text-justify d-md-block d-none">Wash your hands with clean, running water (warm or cold), turn off the tap, and apply soap. Lather your hands by rubbing them together with the soap. Lather the backs of your hands, between your fingers, and under your nails. Scrub your hands for at least 20 seconds.</p>
+          </div>
+         </div>
+        </div>
+
+          <div class="media row">
+            <div class="col-12 col-sm-4">
+            <img src="/images/social.svg" class=" image-fluid">
+          </div>
+          <div class="col-12 col-sm-8">
+            <div class="media-body">
+              <h5 class="mt-0">Maintane Social Distancing</h5>
+              <p class="text-muted text-justify d-md-block d-none">Social distancing is a non-pharmaceutical infection prevention and control intervention implemented to avoid/decrease contact between those who are infected with a disease causing pathogen and those who are not, so as to stop or slow down the rate and extent of disease transmission in a community. This eventually leads to decrease in spread, morbidity and mortality due to the disease.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-
-    <div class="row">
-      <div class="col-md-6 aboutCovid">
-        <h3>Wash Hands</h3>
-        <p>Wet your hands with clean, running water (warm or cold), turn off the tap, and apply soap. Lather your hands by rubbing them together with the soap. Lather the backs of your hands, between your fingers, and under your nails. Scrub your hands for at least 20 seconds.</p>
-      </div>
-      <div class="col-md-6">
-        <img class="doctorImage img-fluid" src="/images/hand.svg" alt="washing hands"">
-      </div>
-    </div>
-
+  <hr>
   </div>
- 
 
 </div>
 <div class="jumbotron" style="margin-bottom: 0;">
-  <p class="lead">Lastest News On Covid-19</p>
-  <hr class="my-4">
-  <a class="btn btn-primary" href="news" role="button">Learn more</a>
+  <h3 >More</h3>
+  <div class="row">
+    <div class="col-12 col-sm-6">
+      <img class="logo1" src="/images/news.svg" alt=""><br>
+      <a class="btn btn-sm btn-outline-dark" href="news" role="button">Read News</a>
+    </div>
+    <div class="col-12 col-sm-6">
+      <img class="logo2" src="/images/who.png" alt=""><br>
+      <a class="btn btn-sm btn-outline-dark" href="https://www.who.int/" role="button">Visit WHO</a>
+    </div>
+  </div>
+
 </div>
 <%- include('partials/footer'); -%>

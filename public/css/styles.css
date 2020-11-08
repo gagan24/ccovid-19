@@ -1,122 +1,181 @@
-body{
-    background-color: #f1f9f9;
-    font-family: 'Montserrat', sans-serif;}
-
-.heading{
-    margin-top: 50px;
+* {
+  margin: 0;
+}
+body {
+  /* background-color: #f1f9f9; */
+  font-family: "Montserrat", sans-serif;
 }
 
-h1{
-    display: inline-block;
-    font-size: 56px;
-    color: rgb(69, 88, 196);
-    font-weight: bold;
+.heading {
+  margin-top: 50px;
 }
 
-.options a{
-    float: right;
-    text-decoration: none;
+h1 {
+  display: inline-block;
+  font-size: 56px;
+  color: #ff5b62;
+  font-weight: bold;
 }
 
-.info{
-    margin-top: 2rem;
+.options a {
+  float: right;
+  text-decoration: none;
+}
+.card {
+  background-color: #fffefe;
+  text-align: center;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  box-shadow: 8px 8px 12px #ccc;
 }
 
-.aboutCovid{
-    margin-top: auto;
-    margin-bottom: auto;
-    text-align: justify;
+.aboutCovid {
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: justify;
 }
 
-.numbers{
-    margin: 5rem auto 8rem;
+.numbers {
+  margin: 5rem auto 8rem;
 }
 
-.worldwide{
-    margin-bottom: 4rem;
-    margin-top: 6rem;
-    font-size: 1.3rem;
+.worldwide {
+  margin-bottom: 4rem;
+  margin-top: 6rem;
+  font-size: 1.3rem;
 }
 
-.card{
-    background-color:  #fffefe;
+.doctorImage {
+  height: 95%;
+  width: 95%;
+  float: right;
+}
+
+.precautions h2 {
+  /* margin-top: 6rem; */
+  margin-bottom: 4rem;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  margin: 2rem auto 1rem auto;
+}
+
+.footer {
+  padding: 3rem;
+
+  position: relative;
+  bottom: 0;
+  background-color: #ff5b62;
+  color: #f1f9f9;
+  text-align: center;
+  /* margin-top: 2rem; */
+}
+
+.footer p {
+  margin-bottom: 0;
+}
+#credits {
+  text-decoration: underline;
+  color: aliceblue;
+}
+
+.news {
+  color: #ff5b62;
+  float: right;
+  margin-top: 25px;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.jumbotron {
+  background-color: white;
+  text-align: center;
+}
+
+.active {
+  color: rgb(69, 88, 196);
+}
+
+.recovered {
+  color: green;
+}
+
+.death {
+  color: red;
+}
+
+.confirmed {
+  color: brown;
+}
+
+.tests {
+  color: purple;
+}
+
+.critical {
+  color: palevioletred;
+}
+
+.news-area {
+  margin: 2rem auto 4rem;
+}
+
+.flagImg {
+  display: block;
+  margin: auto auto 3rem;
+  width: 3rem;
+  height: 2rem;
+}
+
+.logo1 {
+  width: 30%;
+  height: 30%;
+  margin-bottom: 1rem;
+}
+
+.logo2 {
+  width: 12%;
+  height: 30%;
+  margin-bottom: 1rem;
+}
+
+.jumbotron h3 {
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 1000px) {
+  .precautions {
+    margin: auto 15rem;
+  }
+
+  .media {
+    margin: 2rem auto;
+  }
+  .media img {
+    width: 80%;
+    height: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .precautions {
     text-align: center;
-    margin-bottom: 2rem;
-    border-radius: 1rem;
-    box-shadow: 8px 8px 12px grey;
-}
+  }
+  .media img {
+    width: 30%;
+    height: 30%;
+  }
+  .media .media-body h5 {
+    font-size: 14px;
+    font-weight: lighter;
+  }
 
-.doctorImage{
-    float: right;
-}
-
-h2{
-    text-align: center;
-}
-
-h3{
-    margin-top: 2rem;
-}
-
-.footer{
-    height: 5rem;
-    background-color: rgb(69, 88, 196);
-    color: #f1f9f9;
-    text-align: center;
-    /* margin-top: 2rem; */
-    margin-bottom: 0;
-}
-
-
-.news{
-    color: rgb(69, 88, 196);
-    float: right;
-    margin-top: 25px;
-    text-decoration: none;
-    font-size: 24px; 
-}
-
-
-.jumbotron{
-    margin-top: 8rem;
-    text-align: center;
-}
-
-.btn{
-    background-color: rgb(69, 88, 196);
-}
-
-.active{
-    color: rgb(69, 88, 196);
-}
-
-.recovered{
-    color: green;
-}
-
-.death{
-    color: red;
-}
-
-.confirmed{
-    color: brown;
-}
-
-.tests{
-    color: purple;
-}
-
-.critical{
-    color: palevioletred;
-}
-
-.news-area{
-    margin: 2rem auto 4rem;
-}
-
-.flagImg{
-    display: block;
-    margin: auto auto 3rem;
-    width: 3rem;
-    height: 2rem;
+  .logo2 {
+    width: 15%;
+    height: 45%;
+  }
 }
